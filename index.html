@@ -1,68 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Hangman</title>
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<!--style>
-		#home {width: 424px;
-		height: 200px;
-		background: url(assets/images/popcorn.gif) 0 0;}
-	</style-->
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-	<h1>Hangman</h1>
-	<br>
-	<div id="home"></div>
-	<iframe src="https://giphy.com/embed/26ufdipQqU2lhNA4g" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/producthunt-mind-blown-blow-your-26ufdipQqU2lhNA4g">via GIPHY</a></p>
-	<script>
-		// Create an array of words
-		var words = [
-		"cat",
-		"dog",
-		"starcraft",
-		"fender",
-		"bass",
-		];
-
-		// Pick a random word
-		var word = words[Math.floor(Math.random() * words.length)];
-
-		// Set up the answer array
-		var answerArray = [];
-		for (var i = 0; i < word.length; i++) {
-			answerArray[i] = "_"
-		}
-
-		var remaigningLetters = word.length;
-		
-		// The game loop
-		while (remaigningLetters > 0) {
-		 	// Show the player their progress
-		 	alert(answerArray.join(" "));
-
-		 // Get a guess from the player
-		 var guess = prompt("Guess a letter or click 'Cancel' to stop.");
-
-		 if (guess == null) {
-		 	// Exit the game loop
-		 	break;
-		 }
-		 else {
-		 	// Update the game state with the guess
-		 	for (var j = 0; j < word.length; j++) {
-		 		if (word[j] === guess) {
-		 			answerArray[j] = guess;
-		 			remaigningLetters--;
-		 		}
-		 	}
-		}
-		// End the game loop
-		}
-		// Show the answer and congratulate the player
-		alert(answerArray.join(" "));
-		alert("Good job! The answer is " + word);
-	</script>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+    </div>
 </body>
+<div class="footer">
+    <p>HANGMAN</p>
+</div>
 </html>
+
+
+        
+
+    
