@@ -1,10 +1,10 @@
 // Create an array of words
 var words = [
-    "cat",
-    "dog",
+    "planet",
+    "moon",
     "starcraft",
-    "fender",
-    "bass",
+    "asteroid",
+    "alien",
 ];
 
 // Pick a random word
@@ -22,7 +22,7 @@ var remaigningLetters = word.length;
 while (remaigningLetters > 0) {
     // Show the player their progress
     alert(answerArray.join(" "));
-
+    
     // Get a guess from the player
     var guess = prompt("Guess a letter or click 'Cancel' to stop.");
 
